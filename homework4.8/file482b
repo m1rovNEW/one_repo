@@ -1,0 +1,97 @@
+.:
+total 40
+drwxr-xr-x 3 batman bobrov 4096 Apr 29 09:24 Desktop
+drwxr-xr-x 4 batman bobrov 4096 Apr 29 09:32 Documents
+drwxr-xr-x 4 batman bobrov 4096 Apr 30 23:39 Downloads
+-rw-rw-r-- 1 batman bobrov 2667 May  2 13:04 file481
+-rw-rw-r-- 1 batman bobrov 2801 May  2 13:05 file482a
+-rw-rw-r-- 1 batman bobrov    0 May  2 13:05 filedir2
+drwxr-xr-x 2 batman bobrov 4096 Apr  5 01:13 Music
+drwxr-xr-x 2 batman bobrov 4096 Apr  5 01:13 Pictures
+drwxr-xr-x 2 batman bobrov 4096 Apr  5 01:13 Public
+drwxr-xr-x 2 batman bobrov 4096 Apr  5 01:13 Templates
+drwxr-xr-x 3 batman bobrov 4096 Apr 29 09:39 Videos
+
+./Desktop:
+total 4
+drwxr-xr-x 4 batman bobrov 4096 Apr 29 09:25 dirDesk
+
+./Desktop/dirDesk:
+total 8
+drwxr-xr-x 2 batman bobrov 4096 Apr 29 09:26 dir1
+drwxr-xr-x 2 batman bobrov 4096 Apr 29 09:26 dir2
+
+./Desktop/dirDesk/dir1:
+total 0
+-rw-r--r-- 1 batman bobrov 0 Apr 29 10:30 file1
+
+./Desktop/dirDesk/dir2:
+total 0
+-rw-r--r-- 1 batman bobrov 0 Apr 29 10:30 file2
+
+./Documents:
+total 8
+drwxr-xr-x 2 batman bobrov 4096 Apr 29 09:39 dir1
+drwxr-xr-x 2 batman bobrov 4096 May  2 13:04 dir2
+
+./Documents/dir1:
+total 0
+-rw-rw-r-- 1 batman bobrov 0 Apr 29 10:30 file1
+
+./Documents/dir2:
+total 20
+-rwxrwxr-x 1 batman bobrov 159 May  2 12:58 myscript481
+-rwxrwxr-x 1 batman bobrov 277 May  2 12:54 myscript482a
+-rwxrwxr-x 1 batman bobrov 289 May  2 13:02 myscript482b
+-rwxrwxr-x 1 batman bobrov 342 May  2 13:04 myscript483
+-rwxrwxr-x 1 batman bobrov 354 May  2 12:11 myscript484
+
+./Downloads:
+total 40
+drwxrwxr-x 4 batman bobrov  4096 Apr 29 09:39 dirDown
+drwxrwxr-x 2 batman bobrov  4096 Apr 30 23:38 java
+-rw-rw-r-- 1 batman bobrov 32149 Apr 30 23:39 java.zip
+
+./Downloads/dirDown:
+total 8
+drwxrwxr-x 2 batman bobrov 4096 Apr 29 09:39 dir1
+drwxrwxr-x 2 batman bobrov 4096 Apr 29 09:39 dir2
+
+./Downloads/dirDown/dir1:
+total 0
+-rw-rw-r-- 1 batman bobrov 0 Apr 29 10:30 file1
+
+./Downloads/dirDown/dir2:
+total 0
+-rw-rw-r-- 1 batman bobrov 0 Apr 29 10:30 file2
+
+./Downloads/java:
+total 52
+-rw-rw-r-- 1 batman bobrov 8921 Mar 27  2019 aether-transport-file-1.1.0.jar
+-rw-rw-r-- 1 batman bobrov 2254 Mar 27  2019 jcip-annotations-1.0.jar
+-rw-rw-r-- 1 batman bobrov 3938 Mar 27  2019 jps-launcher.jar
+-rw-rw-r-- 1 batman bobrov 7098 Mar 27  2019 jshell-frontend.jar
+-rw-rw-r-- 1 batman bobrov 3137 Mar 27  2019 kotlin-stdlib-jdk7-1.3.11.jar
+-rw-rw-r-- 1 batman bobrov 3963 Mar 27  2019 kotlin-test-common-1.3.11.jar
+-rw-rw-r-- 1 batman bobrov 4265 Mar 27  2019 plexus-component-annotations-1.6.jar
+-rw-rw-r-- 1 batman bobrov 7188 Mar 27  2019 xmlpull-1.1.3.1.jar
+
+./Music:
+total 0
+
+./Pictures:
+total 0
+
+./Public:
+total 0
+
+./Templates:
+total 0
+
+./Videos:
+total 4
+drwxrwxr-x 2 batman bobrov 4096 Apr 29 09:39 dirVid
+
+./Videos/dirVid:
+total 0
+-rw-rw-r-- 1 batman bobrov 0 Apr 29 10:30 fileVid

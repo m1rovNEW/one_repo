@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Go to home directory
+cd
+# Create file with extended recursive listing of the home directory
+ls -RFl > filedir2
+echo "file in the home directory"
+
+# Show only files 
+sed '/\/$\|^$\|^\.\|total/d' filedir2 > fileF
+
+# Show columns dates and names for files
+awk '{print $6,$7,$8,$9}' fileF > file484
+
+# Delete temporary files
+rm fileF filedir2

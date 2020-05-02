@@ -1,0 +1,12 @@
+#!/bin/bash
+# Go to home directory
+cd
+# Create file with extended recursive listing of the home directory
+ls -RFl > filedir2
+echo "file in the home directory"
+# Show only files
+sed '/\/$\|^$\|^\.\|total/d' filedir2 > fileF
+# Show columns names with one or more digits for files
+awk '$9 ~ /[0-9]/ {print $9}' fileF > file485
+# Delete temporary files
+rm fileF filedir2

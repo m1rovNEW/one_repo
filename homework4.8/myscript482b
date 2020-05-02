@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Go to home directory
+cd
+# Create file with extended recursive listing of the home directory
+ls -Rl > filedir2
+echo "file in the home directory"
+
+# Username replacement with awk
+awk '{sub(/bobrov/, "batman"); print}' filedir2 > file482b
+
+# Delete temporary files
+rm filedir2
