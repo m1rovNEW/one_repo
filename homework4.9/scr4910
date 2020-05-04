@@ -1,0 +1,7 @@
+#!/bin/bash
+
+vartime=$(date | awk '{print $4}')
+varlink=$(pwd)
+varid=$(echo $UID)
+
+echo "I visited directory $varlink at $vartime using ID $varid"

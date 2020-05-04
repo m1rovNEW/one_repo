@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Please write first word"
+read first
+
+echo "Please wrire secont word"
+read second
+
+var1=$(echo "$first" | awk "END {print NF}")
+var2=$(echo "$second" | awk "END {print NF}")
+
+if [[ -z "$first" || -z "$second" ]]; then
+  echo "ERROR 1 Too few words in the field"
+elif [[ "$var1">1 || "$var2">1 ]]; then
+  echo "ERROR 2 Too many words in the field"
+elif [[ "$first">"$second" ]]; then
+  echo "$first more then $second"
+elif [[ "$first"<"$second" ]]; then
+  echo "$second more then $first"
+else
+  echo "$first and $second are the same"
+fi

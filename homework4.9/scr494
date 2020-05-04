@@ -1,0 +1,12 @@
+#!/bin/bash
+# Create a variable with a link to my home directory
+varDir=$(echo $HOME)
+# Count how many subdirectories in my home directory and create the variable
+countSubdir=$(find "$varDir" -type d | sed 's/\// /g' |\
+awk '{$1=$2=""; print $0}' | awk 'NF > 0' | awk 'END{print NR}')
+# Display a message with count a directories
+echo "In my home directory "$countSubdir" subdirectories:"
+# Display directory names
+find "$varDir" -type d | sed 's/\// /g' |\
+awk '{$1=$2=""; print $0}' | awk 'NF > 0' | awk '{print $NF}' | sort > file494
+cat file494

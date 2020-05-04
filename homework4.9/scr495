@@ -1,0 +1,3 @@
+#!/bin/bash
+awk 'BEGIN {print "Please write word"; print}\
+{print "Length of word is: " length($0)}'
