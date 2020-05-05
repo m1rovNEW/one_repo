@@ -1,0 +1,3 @@
+#!/bin/bash
+
+${param?"ERROR message"}

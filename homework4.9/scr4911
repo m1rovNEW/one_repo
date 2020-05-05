@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "First method"
+echo "$PATH" | sed 's/:/\t/g' | awk '{print $NF}'
+
+echo "Second method"
+
+echo "Third method"

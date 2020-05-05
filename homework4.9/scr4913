@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wget http://google.com.ua | lynx index.html

@@ -1,0 +1,6 @@
+#!/bin/bash
+# Create variable with word "path"
+str1=$(echo "path")
+# Search position letter "a" in the string
+echo "Letter \"a\" in the string "$str1" on the position: "\
+`expr index "$str1" a`
