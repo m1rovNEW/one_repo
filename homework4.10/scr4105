@@ -1,0 +1,7 @@
+#/bin/bash
+
+for num in "$@"
+do
+let "sq=$num*$num"
+echo "Squared number $num  = $sq"
+done

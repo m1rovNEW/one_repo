@@ -1,0 +1,12 @@
+#!/bin/bash
+
+var2=quit
+echo "Please write"
+while read var1
+do
+  if [ "$var1" != "$var2" ]
+  then echo "write more"
+  else echo "Good by"
+  break
+  fi
+done

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+var=$(echo "$USER")
+mkdir /home/"$var"/tmp
+
+while :
+do
+  var1=$(date | awk '{print $2,$3,$4}');
+  var2=$(ps | awk 'END {print NR}');
+  echo "Time is: "$var1" and number of process:\
+ "$var2"" >> /home/"$var"/tmp/file4102.txt
+  sleep 60
+done
