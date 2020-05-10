@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "User's processes:"
+echo "<$USER>"
+# Display list processes of the user $USER, delete title and count strings
+ps -u $USER | sed '1d' | wc -l
+echo "root user processes:"
+#Display list processes of the root user, delete title, count strings
+ps -u root | sed '1d' | wc -l
