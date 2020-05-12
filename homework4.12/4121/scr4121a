@@ -1,0 +1,6 @@
+#!/bin/bash
+# Create users with information from file userspass.txt
+for (( i=1; i<21; i++ )) {
+  sudo useradd -p $(openssl passwd -6 $(sed $i!d userspass.txt | awk '{print $3}'))\
+    -s /bin/bash $(sed $i!d userspass.txt | awk '{print $2}')
+}

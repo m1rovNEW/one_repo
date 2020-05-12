@@ -1,0 +1,31 @@
+#!/bin/bash
+# Create file with users
+if [ ! -f "users.txt" ]
+then
+  for (( i=1; i<21; i++ ))
+  {
+    echo "$i. user$i" >> users.txt
+  }
+else echo
+fi
+# Generate passwords and create a file with passwords
+if [ ! -f "passwords.txt" ]
+then
+for (( i=1; i<21; i++ ))
+  {
+    openssl rand -base64 8 >> passwords.txt
+  }
+else echo
+fi
+# Merge two files into one file "userspass.txt"
+paste users.txt passwords.txt > userspass.txt
+# Delete the first column of a file userspass.txt
+# and create temporary file
+awk '{print $2,$3}' userspass.txt > temp
+# Create files for users with pass and login
+for (( i=1; i<21; i++ ))
+  {
+    sed $i!d temp > user$i-login-password.txt
+  }
+# Delete temporary files
+rm temp passwords.txt

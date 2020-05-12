@@ -1,0 +1,28 @@
+#!/bin/bash
+# Calculate checksums of project files. The command is executed from a file Makefile.
+make md5f
+# Perform project archiving. The command is executed from a file Makefile.
+make tarf
+# Define variables for readability.
+name1=main.cpp
+name2=hello.cpp
+name3=factorial.cpp
+name4=functions.h
+name5=project
+# Run an endless loop in which the project files are checked,
+# if they were changed, then archived into a new archive and compiling files.
+# Archiving and compilation in a loop are performed from a file Makefile.
+# The cycle repeats every 10 minutes.
+while :
+do
+  datef=$(date +%m%d%H%M)
+  if [[ -N $name1 || -N $name2 || -N $name3 || -N $name4 ]] ; then
+    make tarf
+    cp $name5.tar.gz $name5$datef.tar.gz
+    make
+  fi
+  sleep 60
+done
+
+
+
